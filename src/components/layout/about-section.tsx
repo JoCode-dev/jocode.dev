@@ -123,7 +123,7 @@ export default function AboutSection() {
               alt={skill.name}
               width={20}
               height={20}
-              className="object-contain h-full w-full"
+              className="object-contain lg:h-7 lg:w-7 h-5 w-5"
             />
             <p className="text-sm dark:text-gray-300 text-black">
               {skill.name}
