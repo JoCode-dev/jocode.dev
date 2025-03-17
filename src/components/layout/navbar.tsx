@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -8,13 +10,15 @@ import { BrainIcon, HomeIcon, PaletteIcon, SendIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "../theme/mode-toggle";
-
+import { useTheme } from "next-themes";
 export const Navbar = () => {
+  const { theme } = useTheme();
+
   return (
     <div className="w-full p-4 flex flex-row items-center justify-between">
       <div className="flex flex-row items-center gap-4 xl:px-10 px-4">
         <Image
-          src="/logo.png"
+          src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
           alt="logo"
           width={50}
           height={50}
