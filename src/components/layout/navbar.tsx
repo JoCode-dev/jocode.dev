@@ -1,5 +1,3 @@
-"use client";
-
 import {
   Tooltip,
   TooltipContent,
@@ -7,23 +5,14 @@ import {
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
 import { BrainIcon, HomeIcon, PaletteIcon, SendIcon } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "../theme/mode-toggle";
-import { useTheme } from "next-themes";
+import { Logo } from "./navbar/Logo";
 export const Navbar = () => {
-  const { theme } = useTheme();
-
   return (
     <div className="w-full p-4 flex flex-row items-center justify-between">
       <div className="flex flex-row items-center gap-4 xl:px-10 px-4">
-        <Image
-          src={theme === "dark" ? "/logo-dark.png" : "/logo-light.png"}
-          alt="logo"
-          width={50}
-          height={50}
-          className="md:w-10 md:h-10 w-8 h-8"
-        />
+        <Logo />
       </div>
       <div className="flex flex-row items-center justify-between gap-4 dark:bg-[#0B1115] bg-[#efefef] w-[13rem] px-3 py-2 rounded-xl">
         <div className="rounded-full dark:bg-[#11191E] bg-[#dee2e6] md:w-8 md:h-8 w-6 h-6 flex flex-col items-center justify-center">
