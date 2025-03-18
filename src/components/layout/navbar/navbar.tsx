@@ -6,11 +6,12 @@ import {
 } from "@radix-ui/react-tooltip";
 import { BrainIcon, HomeIcon, PaletteIcon, SendIcon } from "lucide-react";
 import Link from "next/link";
-import { ModeToggle } from "../theme/mode-toggle";
-import { Logo } from "./navbar/Logo";
+import { ModeToggle } from "../../theme/mode-toggle";
+import { Logo } from "./Logo";
+
 export const Navbar = () => {
   return (
-    <div className="w-full p-4 flex flex-row items-center justify-between">
+    <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-background/80 w-full p-4 flex flex-row items-center justify-between">
       <div className="flex flex-row items-center gap-4 xl:px-10 px-4">
         <Logo />
       </div>
@@ -54,14 +55,14 @@ export const Navbar = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Link
-                  href="/#services"
+                  href="/#portfolio"
                   className="hover:scale-110 transition-all duration-300"
                 >
                   <PaletteIcon className="md:w-5 md:h-5 w-4 h-4" />
                 </Link>
               </TooltipTrigger>
               <TooltipContent>
-                <p className="text-sm font-medium mb-1">Services</p>
+                <p className="text-sm font-medium mb-1">Portfolio</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
