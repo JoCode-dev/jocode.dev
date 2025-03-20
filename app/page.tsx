@@ -1,4 +1,5 @@
 import AboutSection from "@/components/layout/about-section";
+import { ContactSection } from "@/components/layout/contact-section";
 import { HeroSection } from "@/components/layout/hero-section";
 import { Navbar } from "@/components/layout/navbar/navbar";
 import { PortfolioSection } from "@/components/layout/portfolio-section";
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* Portfolio Section */}
       <PortfolioSection />
+
+      {/* Contact Section */}
+      <ContactSection />
     </div>
   );
 }

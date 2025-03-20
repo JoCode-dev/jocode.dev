@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -8,10 +10,37 @@ import { BrainIcon, HomeIcon, PaletteIcon, SendIcon } from "lucide-react";
 import Link from "next/link";
 import { ModeToggle } from "../../theme/mode-toggle";
 import { Logo } from "./Logo";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => window.removeEventListener("scroll", controlNavbar);
+  }, [lastScrollY]);
+
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-background/80 w-full p-4 flex flex-row items-center justify-between">
+    <div
+      className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-background/80 w-full p-4 flex flex-row items-center justify-between transition-transform duration-300 ${
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="flex flex-row items-center gap-4 xl:px-10 px-4">
         <Logo />
       </div>
