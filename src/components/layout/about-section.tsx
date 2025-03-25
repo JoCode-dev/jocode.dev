@@ -38,11 +38,11 @@ const skills: Skill[] = [
     name: "Node.js",
     icon: "/skills/nodejs.png",
   },
-  {
+  /* {
     id: 6,
     name: "NestJS",
     icon: "/skills/nestjs.png",
-  },
+  }, */
   {
     id: 7,
     name: "Database",
@@ -55,8 +55,8 @@ const skills: Skill[] = [
   },
   {
     id: 9,
-    name: "Docker",
-    icon: "/skills/docker.png",
+    name: "Python",
+    icon: "/skills/python.png",
   },
   /* {
     id: 10,
