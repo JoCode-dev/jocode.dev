@@ -143,7 +143,7 @@ export const ContactSection = () => {
           <span className="w-full h-[1px] bg-[#E2E4E9]"></span>
 
           <p className="text-sm font-semibold tracking-tight mx-auto lg:w-[26rem] text-center lg:text-left px-4 lg:px-2 dark:text-[#E2E4E9] text-[#11191E]">
-            hello@jocode.dev
+            hello@jocode.tech
           </p>
 
           <div className="flex flex-row gap-2">

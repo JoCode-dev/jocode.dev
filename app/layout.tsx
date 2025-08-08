@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JoCode.dev",
+  title: "JoCode.tech",
   description:
-    "JoCode.dev is a website for JoCode, a software development company.",
+    "JoCode.tech is a website for JoCode, a fullstack software engineer.",
 };
 
 export default function RootLayout({
