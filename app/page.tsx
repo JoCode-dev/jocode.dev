@@ -9,7 +9,7 @@ export default async function Home() {
       <Portfolio2Page />
 
       {/* Portfolio Section */}
-      <PortfolioSection />
+      {/* <PortfolioSection /> */}
 
 
       {/* Contact Section */}
