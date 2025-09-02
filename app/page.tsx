@@ -1,6 +1,5 @@
 import { ContactSection } from "@/components/layout/contact-section";
 import Portfolio2Page from "@/components/layout/portfolio-2";
-import { PortfolioSection } from "@/components/layout/portfolio-section";
 
 export default async function Home() {
   return (
