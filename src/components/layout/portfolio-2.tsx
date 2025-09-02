@@ -92,8 +92,8 @@ const Portfolio2 = () => {
                 {/* Social Links Footer - Now fully responsive with dark mode support */}
                 <footer className="flex justify-center pt-8 pb-4 md:p-0 md:justify-start md:absolute md:bottom-8 md:left-8 lg:bottom-12 lg:left-12">
                     <div className="flex space-x-5 md:space-x-6 text-gray-500 dark:text-gray-400 text-lg md:text-xl">
-                        <a href="#" className="hover:text-black dark:hover:text-white transition-colors"><LinkedInIcon /></a>
-                        <a href="#" className="hover:text-black dark:hover:text-white transition-colors"><GithubIcon /></a>
+                        <a href="https://www.linkedin.com/in/ange-c%C3%A9dric-jo%C3%ABl-duakon-587859186/" target='_blank' className="hover:text-black dark:hover:text-white transition-colors"><LinkedInIcon /></a>
+                        <a href="https://github.com/JoCode-dev" target='_blank' className="hover:text-black dark:hover:text-white transition-colors"><GithubIcon /></a>
 
                         <Link href="https://buymeacoffee.com/cedricduak0" target="_blank" className="hover:text-black dark:hover:text-white transition-colors">
                             <div className="flex flex-row items-center gap-2">
