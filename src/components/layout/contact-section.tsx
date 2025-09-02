@@ -1,9 +1,9 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -18,8 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CupSoda, LinkedinIcon, PhoneIcon } from "lucide-react";
-import Link from "next/link";
+import { Separator } from "../ui/separator";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),
@@ -98,25 +97,29 @@ export const ContactSection = () => {
               N&apos;hésitez pas à me contacter pour toute question ou opportunité.
             </p>
             <div className="mt-8 flex flex-col gap-4 justify-center items-center md:items-start">
-              <Button className="w-[20rem] bg-[#7B4AE2] text-white py-4 cursor-pointer hover:bg-[#7B4AE2]/80 transition-all duration-300"
+              {/* <button className="flex items-center gap-2 mt-8 bg-black dark:bg-white text-white dark:text-black font-bold py-3 px-10 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                 onClick={() => {
                   window.open("https://wa.me/2250788466748?text=Bonjour, je souhaite obtenir des informations sur vos services de développement.", "_blank");
-                }}>
+                }}
+              >
                 <PhoneIcon className="w-4 h-4" />
-                <p className="text-sm font-semibold tracking-tight">Parlons de votre projet</p>
-              </Button>
+                Parlons de votre projet
+              </button> */}
+
+              <Separator className="bg-[#333]" />
 
               <p className="text-sm font-semibold tracking-tight md:w-[26rem] text-center md:text-left px-4 md:px-0 dark:text-[#E2E4E9] text-[#11191E]">
                 Je suis ouvert aux opportunités de collaboration sur tout type de projet améliorant la qualité de vie des personnes à travers des solutions innovantes.
               </p>
 
-              <span className="w-full h-[1px] bg-[#E2E4E9]"></span>
+              <Separator className="bg-[#333]" />
+
 
               <p className="text-sm font-semibold tracking-tight md:w-[26rem] text-center md:text-left px-4 md:px-0 dark:text-[#E2E4E9] text-[#11191E]">
                 hello@jocode.tech
               </p>
 
-              <div className="flex flex-row gap-4 text-gray-500 dark:text-gray-400 text-lg">
+              {/* <div className="flex flex-row gap-4 text-gray-500 dark:text-gray-400 text-lg">
                 <Link href="https://www.linkedin.com/in/ange-cédric-joël-duakon-587859186" target="_blank" className="hover:text-black dark:hover:text-white transition-colors">
                   <div className="flex flex-row items-center gap-2">
                     <LinkedinIcon className="w-4 h-4" />
@@ -137,7 +140,7 @@ export const ContactSection = () => {
                     <p className="text-sm font-semibold tracking-tight">Buy me a coffee</p>
                   </div>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 

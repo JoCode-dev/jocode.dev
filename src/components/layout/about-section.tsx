@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inconsolata } from "next/font/google";
+import { VideoText } from "../ui/video-text";
 
 const inconsolata = Inconsolata({
   variable: "--font-inconsolata",
@@ -130,6 +131,10 @@ export default function AboutSection() {
             </p>
           </div>
         ))}
+      </div>
+
+      <div className="relative h-[500px] w-full overflow-hidden">
+        <VideoText src="https://cdn.pixabay.com/video/2024/05/25/213616_large.mp4">JOCODE</VideoText>
       </div>
     </section>
   );

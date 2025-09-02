@@ -1,4 +1,4 @@
-import { AppleCardsCarousel } from "../portfolio/apple-card";
+
 
 export const PortfolioSection = () => {
   return (
@@ -17,7 +17,6 @@ export const PortfolioSection = () => {
       </p>
 
       {/* Projects */}
-      <AppleCardsCarousel />
     </section>
   );
 };

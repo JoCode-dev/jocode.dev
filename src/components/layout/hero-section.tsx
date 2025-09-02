@@ -33,7 +33,7 @@ export function HeroSection() {
           </p>
         </motion.h1>
 
-        <div className="flex justify-center items-center mt-12">
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-20">
           <Link href={"#contact"} className="cursor-pointer">
             <Button className="bg-[#595CFF] hover:bg-[#595CFF]/90 text-white font-bold text-lg py-6 rounded-lg transition-all duration-300 tracking-tight cursor-pointer">
               Discutons de votre projet
