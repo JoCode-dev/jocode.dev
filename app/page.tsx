@@ -1,22 +1,16 @@
 import { ContactSection } from "@/components/layout/contact-section";
 import Portfolio2Page from "@/components/layout/portfolio-2";
+import { PortfolioSection } from "@/components/layout/portfolio-section";
 
 export default async function Home() {
   return (
     <div className="min-h-screen dark:bg-[#000B12] bg-white">
-      {/* Navbar */}
-      {/* <Navbar /> */}
-
-      {/* Hero Section */}
-      {/* <HeroSection /> */}
-
-      {/* About Section */}
-      {/* <AboutSection /> */}
+      {/* Portfolio 2 Page */}
+      <Portfolio2Page />
 
       {/* Portfolio Section */}
-      {/* <PortfolioSection /> */}
+      <PortfolioSection />
 
-      <Portfolio2Page />
 
       {/* Contact Section */}
       <ContactSection />
